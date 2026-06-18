@@ -873,24 +873,6 @@ arvore.appendChild(liF);
 
 }
 
-/* PESQUISA */
-
-function pesquisar(txt){
-
-txt=txt.toLowerCase();
-
-document.querySelectorAll("li").forEach(li=>{
-
-li.classList.remove("highlight");
-
-if(li.textContent.toLowerCase().includes(txt) && txt!=""){
-li.classList.add("highlight");
-}
-
-});
-
-}
-
 window.onload=criarArvore;
 
 </script>
